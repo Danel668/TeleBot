@@ -1,0 +1,4 @@
+{"level":"info","time":"2025-01-18T10:26:52.157+0300","msg":"Some msg"}
+{"level":"info","time":"2025-01-18T10:42:38.622+0300","msg":"Some msg 123"}
+{"level":"info","time":"2025-01-18T10:48:54.464+0300","msg":"Some msg 123"}
+{"level":"info","time":"2025-01-18T10:50:39.952+0300","msg":"Some msg 123","file":"prod.json","error":"some error"}

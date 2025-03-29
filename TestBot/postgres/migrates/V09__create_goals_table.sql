@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS goals(
+    user_id BIGINT PRIMARY KEY,
+    goal INT NOT NULL
+);

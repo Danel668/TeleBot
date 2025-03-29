@@ -1,0 +1,85 @@
+{
+	"section": {
+		"section_recommendation": {
+			"button_recommendation": "Рекомендации",
+			"text_after_button_recommendation": "Здесь вы можете оставить свои рекомендации, мы постараемся их учесть",
+			"text_after_getting_recommendation": "Спасибо за вашу обратную связь",
+			"text_error_after_getting_recommendation": "Ошибка, бот упал"
+		},
+		"section_admin": {
+			"admin_mode_switching": "admin",
+			"text_after_switching_admin_mode": "Вы успешно перешли в админский режим",
+			"text_after_ban_user": "Пользователь был успешно забанен",
+			"text_after_assign_role": "Роль успешно назначена на пользователя",
+            "text_after_changing_config": "Конфиг успешно изменен"
+		},
+        "section_registration": {
+            "button_registration": "Регистрация",
+            "text_after_button_registration": "Введите вашу таймзону. Пример: UTC, UTC+3, UTC-5 (строго без пробелов)",
+            "text_after_successful_registration": "Регистрация успешна. Теперь вы можете использовать весь функционал",
+            "text_after_failed_registration": "Не удалось распознать таймзону, попробуйте еще раз, следуя примеру. Пример: UTC+3"
+        },
+		"section_calories": {
+			"button_calories": "Посчитать калории",
+			"text_affter_button_calories": "Введите название блюда и его граммовку. Внимание мы используем ИИ для подсчета. Чем более подробнее вы опишите, тем точнее будет ответ. ОГРАНИЧЕНИЕ 100 СИМВОЛОВ",
+			"text_if_request_exceeds_condition": "Ваш запрос превышает ограничения на количество символов. Измените запрос и попробуйте еще раз. Введите название блюда и его граммовку",
+			"inline_button_change_request": "Изменить запрос",
+			"inline_button_change_request_unique": "inline_button_change_request_unique"
+		},
+		"section_reminder": {
+			"button_reminder": "Напоминание",
+			"button_add_reminder": "Добавить напоминание",
+			"text_error_after_check_registration": "Ошибка, бот упал, попробуйте позже",
+			"text_after_button_reminder": "Вы перешли в раздел напоминание",
+			"text_after_button_add_reminder": "Введите напоминание. Следуйте строго примерам. Примеры: 12:20 Встреча 1vs1 (формат hh:mm text), 08.01.2025 14:20 Встреча 1vs1 (формат dd.mm.yyyy hh:mm text)",
+			"button_reminder_manual": "Инструкция",
+			"text_after_button_reminder_manual": "Здесь вы можете добавить напоминание. Мы пришлем вам сообщение, когда оно сработает",
+			"text_invalid_pattern_add_reminder": "Неверный формат напоминания. Попробуйте еще раз, следуя примерам. Примеры: 12:20 Встреча 1vs1 (формат hh:mm text), 08.01.2025 14:20 Встреча 1vs1 (формат dd.mm.yyyy hh:mm text)",
+			"difference_between_sending_and_expiring_m": 5,
+			"text_after_adding_reminder": "Напоминание добавлено. Мы отправим вам сообщение в указанное вами время",
+			"text_invalid_time": "Неверно указано время. Возможно данный промежуток времени уже прошел, попробуйте еще раз",
+			"button_get_my_reminders": "Мои напоминания",
+			"text_if_reminders_is_empty": "У вас нет актуальных напоминаний"
+		},
+		"section_my_progress": {
+			"button_my_progress": "Мой прогресс",
+			"button_my_progress_manual": "Инструкция",
+			"button_my_progress_set_goal": "Установить цель",
+			"button_my_progress_add_ration": "Добавить рацион",
+			"button_my_progress_get_my_rations": "Посмотреть рационы",
+			"text_error": "Ошибка, бот упал. Попробуйте позже",
+			"text_after_button_my_progress": "Вы перешли в раздел мой прогресс",
+			"text_after_button_my_progress_manual": "В этом разделе вы можете добавлять свои рационы, устанавливать цели и отслеживать свой прогресс",
+			"text_after_button_add_ration": "Введите ваш рацион. Внимание мы используем ИИ для подсчета. Чем более подробнее вы опишите, тем точнее будет ответ. ОГРАНИЧЕНИЕ 100 СИМВОЛОВ",
+			"text_after_button_my_progress_set_goal": "Введите размер калорий для дневного употребления следуя строго примеру. Пример: 1800",
+			"text_error_goal_format": "Неверно ведена цель. Введите целое положительное число",
+			"text_after_inserting_goal": "Цель установлена",
+			"text_after_button_my_progress_get_my_rations": "Введите дату строго следуя примерам или воспользуйтесь кнопкой. Примеры: сегодня, вчера, 12.01.2025",
+			"text_error_format_get_my_rations": "Неверный формат даты, попробуйте снова следуя примерам: сегодня, вчера, 12.01.2025",
+			"text_empty_rations": "Вы не добавили ни одного рациона в этот день",
+			"button_my_progress_get_my_rations_for_last_time": "За последние 14 дней",
+			"last_time_get_rations": 14
+		}
+	},
+	"periodic_task": {
+		"send_reminders_settings": {
+			"frequency_s": 10,
+			"lock_name": "send_reminders",
+			"answer_placeholder": "Напоминание о событии: %s"
+		},
+		"clear_expired_state_settings": {
+			"frequency_s": 60,
+			"ttl_s": 300
+		},
+		"dump_to_file_settings": {
+			"frequency_s": 10
+		},
+		"load_config_settings": {
+			"frequency_s": 60
+		},
+		"delete_expired_reminders_settings": {
+			"frequency_s": 60,
+			"lock_name": "delete_expired_reminders"
+		}
+	}
+}

@@ -1,0 +1,18 @@
+server:
+  http_listen_port: 9080
+  grpc_listen_port: 9081
+
+positions:
+  filename: /home/glazenet/GoProjects/TestBot/logs/promtail-positions.yaml  # Файл для отслеживания позиций
+
+clients:
+  - url: http://localhost:3100/loki/api/v1/push  # URL Loki сервера
+
+scrape_configs:
+  - job_name: system
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          job: varlogs
+          __path__: /home/glazenet/GoProjects/TestBot/logs/production.log
